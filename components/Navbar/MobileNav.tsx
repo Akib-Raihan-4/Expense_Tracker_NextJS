@@ -26,13 +26,14 @@ export default function MobileNav({items}:{items:NavItem[]}) {
               </Button>
             </SheetTrigger>
             <SheetContent className="w-[100%] sm:w-[540px]" side="left">
-              <Logo />
+              <Logo showPiggyBank={true} />
               <div className="flex flex-col gap-1 pt-4">
                 {items.map((item:NavItem) => (
                   <NavbarItem
                     key={item.label}
                     link={item.link}
                     label={item.label}
+                    clickCallback = {() => setIsOpen((prev) => ! prev)}
                   />
                 ))}
               </div>

@@ -1,12 +1,8 @@
-
 import React from "react";
 import Logo from "../Logo";
 import { ThemeSwitcherBtn } from "./ThemeSwitcherBtn";
 import { UserButton } from "@clerk/nextjs";
 import NavbarItem from "./NavbarItem";
-// import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-// import { Button } from "../ui/button";
-// import { Menu } from "lucide-react";
 import MobileNav from "./MobileNav";
 
 function Navbar() {
