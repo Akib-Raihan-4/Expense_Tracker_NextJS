@@ -5,7 +5,7 @@ interface LogoProps{
   showPiggyBank: boolean;
 }
 
-function Logo({showPiggyBank = true}: LogoProps) {
+function Logo({showPiggyBank = true}: { showPiggyBank?: boolean }) {
   return (
     <a href="/" className='flex items-center gap-2'>
         {showPiggyBank &&
