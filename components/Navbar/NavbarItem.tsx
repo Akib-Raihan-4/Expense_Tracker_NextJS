@@ -27,7 +27,7 @@ function NavbarItem({
           isActive && "text-foreground"
         )}
         onClick={()=>{
-            if (clickCallback) clickCallback
+            if (clickCallback) clickCallback()
         }}
       >
         {label}
