@@ -39,7 +39,7 @@ export default function MobileNav({items}:{items:NavItem[]}) {
             </SheetContent>
           </Sheet>
           <div className="flex h-[80px] min-h-[60px] items-center gap-x-4">
-              <Logo/>
+              <Logo showPiggyBank={false}/>
           </div>
           <div className="flex items-center gap-2">
               <ThemeSwitcherBtn/>
