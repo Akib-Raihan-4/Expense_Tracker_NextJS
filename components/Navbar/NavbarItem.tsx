@@ -13,6 +13,7 @@ function NavbarItem({link, label}:{
 
     return (
         <div className='relative flex items-center'>
+            {/* buttonVariants are used to make Links look like a button */}
             <Link href={link} className={cn(buttonVariants({variant:"ghost"}), "w-full justify-start text-lg text-muted-foreground hover:text-foreground", isActive && "text-foreground")}>{label}</Link>
             {
                 isActive && (
