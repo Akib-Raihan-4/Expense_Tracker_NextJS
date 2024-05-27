@@ -66,7 +66,7 @@ export function CurrencyComboBox() {
     <SkeletonWrapper isLoading={userSettings.isFetching}>
       <Drawer open={open} onOpenChange={setOpen}>
         <DrawerTrigger asChild>
-          <Button variant="outline" className="w-[150px] justify-start">
+          <Button variant="outline" className="w-full justify-start">
             {selectedOption ? <>{selectedOption.label}</> : <>Set Currency</>}
           </Button>
         </DrawerTrigger>
@@ -89,11 +89,11 @@ function OptionList({
 }) {
   return (
     <Command>
-      <CommandInput placeholder="Filter status..." />
+      <CommandInput placeholder="Filter currency..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup>
-          {Currencies.map((currency) => (
+          {Currencies.map((currency: Currency) => (
             <CommandItem
               key={currency.value}
               value={currency.value}
